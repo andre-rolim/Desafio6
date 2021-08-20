@@ -1,0 +1,170 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: B612-Bold;
+  src: url('../font/B612-Bold.ttf');
+}
+
+@font-face {
+  font-family: B612-BoldItalic;
+  src: url('../font/B612-BoldItalic.ttf');
+}
+
+@font-face {
+  font-family: B612-Italic;
+  src: url('../font/B612-Italic.ttf');
+}
+
+@font-face {
+  font-family: B612-Regular;
+  src: url('../font/B612-Regular.ttf');
+}
+
+@font-face {
+  font-family: B612-Bold;
+  src: url('../font/B612-Bold.ttf');
+}
+
+.mainContainer {
+  max-width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background: url('../img/fundo.jpg') no-repeat center center;
+  background-size: 100% 100%;
+}
+
+.mainContainer::after {
+  content: '\A';
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: -1;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  text-align: center;
+  color: #ffffff;
+}
+
+.container h3 {
+  font-size: 1.5rem;
+  font-family: B612-Regular;
+  padding: 3rem;
+}
+
+.container h1 {
+  font-size: 6rem;
+  font-family: B612-Bold;
+  padding-bottom: 4rem;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.wrapper img {
+  border-radius: 30px;
+  display: block;
+  max-width: 200px;
+  margin-right: 20px;
+}
+
+.details {
+  max-width: 700px;
+}
+
+.description {
+  font-size: 1.24rem;
+  font-family: B612-Regular;
+  text-align: left;
+  justify-self: left;
+  margin-left: 60px;
+}
+
+.infos {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 700px;
+  margin-left: 60px;
+  margin-top: 30px;
+}
+
+.timer {
+  font-family: B612-BoldItalic;
+  font-size: 30px;
+}
+
+.timer::before {
+  content: '';
+  position: relative;
+  top: 3px;
+  display: inline-block;
+  height: 30px;
+  width: 30px;
+  background: url('../img/clock.svg') no-repeat center;
+  background-size: 100% 100%;
+  padding-left: 15px;
+}
+
+.stars {
+  width: 200px;
+  height: 50px;
+  background: url('../img/recomendação.svg') no-repeat center;
+  background-size: 100% 100%;
+}
+
+.year {
+  font-family: B612-BoldItalic;
+  font-size: 30px;
+}
+
+.button {
+  position: relative;
+  top: -52px;
+  left: -10px;
+}
+
+.now {
+  width: 200px;
+  height: 50px;
+  background-color: #0072d2;
+  border: none;
+  border-radius: 2px;
+  color: white;
+  font-family: B612-BoldItalic;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.5s;
+  margin-right: 20px;
+}
+
+.now:hover {
+  background-color: #ffa800;
+}
+
+.trailer {
+  width: 120px;
+  height: 50px;
+  border: 2px solid #fff;
+  background-color: #131318;
+  color: white;
+  font-family: B612-BoldItalic;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.trailer:hover {
+  background-color: #ffa800;
+}
